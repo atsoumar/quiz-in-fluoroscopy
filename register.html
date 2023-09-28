@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="home1.css">
+</head>
+
+<body>
+    <main>
+       <div class="game-quiz-container">
+            <div class="game-details-container">
+                <h1>Quiz in Fluoroscopy</h1>
+            </div>
+
+            <div class="game-options-container">
+                <form id="quizForm">
+                    <input type="text" name="username" id="username" placeholder="username" autocomplete="off" required>
+                    <label for="occupation">Occupation:</label>
+                    <select id="occupation" name="occupation">
+                        <option value="Physician">Physician</option>
+                        <option value="Technologist">Technologist</option>
+                        <option value="Nurse">Nurse</option>
+                        <option value="personnel">Other personnel</option>
+                    </select>
+                    <button type="submit" class="btn" id="SubmitBtn" onclick="saveHighScore(event)"> Submit </button>
+                </form>
+            
+            </div>
+       </div>
+
+    </main>
+
+    <script>
+        function saveHighScore(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const occupation = document.getElementById('occupation').value;
+
+            if (username.trim() === '') {
+                alert('Please enter a username.');
+                return;
+            }
+
+             // Retrieve existing grades from local storage
+            var storedName = localStorage.getItem('name');
+            var storedOccupation = localStorage.getItem('occupations');
+
+            var name = [];
+            var occupations = [];
+
+            if (storedName) {
+            // If names exist in local storage, parse the JSON string to an array
+            name = JSON.parse(storedName);
+            }
+            if (storedOccupation) {
+            // If occupations exist in local storage, parse the JSON string to an array
+            occupations = JSON.parse(storedOccupation);
+            }
+
+            // Add the current name and occupation to the array
+            name.push(username);
+            occupations.push(occupation);
+
+            // Save the updated array to local storage
+            localStorage.setItem('name', JSON.stringify(name));
+            localStorage.setItem('occupations', JSON.stringify(occupations));
+
+            // Redirect to another page 
+            window.location.href = 'home1.html';
+        }
+
+    </script>
+
+</body>
+</html>

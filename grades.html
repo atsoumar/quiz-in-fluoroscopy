@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Grades</title>
+    <link rel="stylesheet" href="home1.css" />
+    <link rel="stylesheet" href="grades.css" />
+  </head>
+
+  <body>
+    <main>
+        <div class="game-quiz-container">
+            <div id="highScores" class="flex-center flex-column">
+                <h1 class="high-score">Grades</h1>
+                <ul class="gradesList" id="gradesList"></ul>
+                <a class="btn" href="home1.html">Go Home</a>
+            </div>
+           
+           
+        </div>
+    </main>
+    <script>
+    // Retrieve the grades array, name and occupation from local storage
+    var storedGrades = localStorage.getItem('grades');
+    var storedName = localStorage.getItem('name');
+    var storedOccupation = localStorage.getItem('occupations');
+    var storedQuizNames = localStorage.getItem('quizNames');
+
+    var grades = [];
+    var name = [];
+    var occupations = [];
+    var quizNames = [];
+
+    if (storedGrades) {
+    // If grades exist in local storage, parse the JSON string to an array
+    grades = JSON.parse(storedGrades);
+    }
+    if (storedName) {
+      name = JSON.parse(storedName);
+    }
+    if (storedOccupation) {
+    // If occupations exist in local storage, parse the JSON string to an array
+      occupations = JSON.parse(storedOccupation);
+    }
+    if (storedQuizNames) {
+        quizNames = JSON.parse(storedQuizNames);
+    }
+
+    // Display the grades in a list format on the page
+    var gradesList = document.getElementById('gradesList');
+
+  grades.forEach(function(grade, index) {
+    var listItem = document.createElement('li');
+    listItem.textContent =  'Quiz: ' + quizNames[index] + ', Grade: ' + grade;
+    gradesList.appendChild(listItem);
+  });
+    </script>
+
+  </body>
+</html>

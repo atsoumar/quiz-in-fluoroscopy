@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+body{
+    font-family: 'Helvetica', sans-serif;
+
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.game-quiz-container{
+    width: 40rem;
+    height: 35rem;
+    background-color: #ecf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+}
+
+.game-details-container{
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game-details-container h1{
+    font-size: 1.2rem;
+    color: #56a5eb;
+}
+
+.game-question-container{
+    width: 80%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid #56a5eb;
+    border-radius: 25px;
+}
+
+.game-question-container h1{
+    font-size: 1.1rem;
+    text-align: center;
+    color: #56a5eb;
+    padding: 3px;
+}
+
+.game-options-container{
+    width: 80%;
+    height: 14rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.game-options-container span{
+    width: 100vw;
+    height: 3.5rem;
+    margin-bottom: 0.2rem;
+    border: 0.1rem solid #56a5eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+span label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+}
+
+span label:hover{
+    -ms-transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    transform: scale(1);
+    color: rgb(51, 7, 131);
+}
+
+input[type="radio"] {
+    position: relative;
+    display: none;
+}
+
+
+input[type=radio]:checked ~ .option {
+    background: rgb(38, 21, 219);
+    color:  white;
+}
+
+.next-button-container{
+    width: 50%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.next-button-container button{
+    width: 8rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 0.3rem;
+    border-radius: 10px;
+    background: none;
+    color:#56a5eb;
+    font-weight: 600;
+    border: 0.1rem solid #56a5eb;
+    cursor: pointer;
+    outline: none;
+}
+.next-button-container button:hover{
+    background-color: rgb(38, 21, 219);
+    color:  white;
+}
+
+.modal-container{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: fadeIn 1.2s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.modal-content-container{
+    height: 20rem;
+    width: 25rem;
+    background-color: rgb(43, 42, 42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+
+.modal-content-container h1{
+    font-size: 1.3rem;
+    height: 3rem;
+    color: lightgray;
+    text-align: center;
+}
+
+.modal-content-explanation{
+    height: 25rem;
+    width: 35rem;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1rem solid #56a5eb;
+    border-radius: 25px;
+}
+
+.modal-content-explanation h1{
+    font-size: 1rem;
+    height: 14rem;
+    color: black;
+    text-align: justify;
+    margin: 15px;
+}
+
+.grade-details{
+    width: 15rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grade-details p{
+    color: white;
+    text-align: center;
+}
+
+.modal-button-container{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-button-container button{
+    width: 7rem;
+    height: 2rem;
+    margin-left: 0.3rem;
+    background: none;
+    outline: none;
+    border: 1px solid rgb(252, 242, 241);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.modal-button-container button:hover{
+    background-color: rgb(83, 82, 82);
+}
+
+.modal-button-explanation{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-button-explanation button{
+    width: 10rem;
+    height: 2rem;
+    background: none;
+    outline: none;
+    border: 1px solid black;
+    color:  black;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.modal-button-explanation button:hover{
+    background-color: rgb(83, 82, 82);
+    color:  white;
+}
+
+.questions-modal-container {
+    max-width: 550px;
+    width: 90%;
+    height: 30rem;
+    margin: auto auto;
+    padding: 0;
+    border-radius: 25px;
+    background-color: rgb(248, 248, 248);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1rem solid #56a5eb;
+    font-family: Arial, sans-serif;
+    -webkit-animation: fadeIn 1.2s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.questions-modal-container p {
+    margin-bottom: 10px;
+}
+
+.questions-modal-container .question {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.questions-modal-container .option {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.questions-modal-container .answer {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.questions-modal-container .explanation {
+    font-style: italic;
+    font-size: 1rem;
+    color: #777;
+    text-align: justify;
+}
+
+.questions-modal-container hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.home{
+    font-size: 1.2rem; 
+    text-decoration: none;
+    text-align: center;
+    width: 7rem;
+    height: 2rem;
+    margin-left: 0.3rem;
+    background: none;
+    outline: none;
+    border: 1px solid rgb(252, 242, 241);
+    color: white;
+    cursor: pointer;
+    border-radius: 20px; 
+    opacity: 0.5;
+}
+
+.home:hover{
+    opacity: 1;
+    background-color: rgb(83, 82, 82);
+}
+
+@media(min-width : 300px) and (max-width : 350px){
+    .game-quiz-container{
+        width: 90%;
+        height: 80vh;
+     }
+     .game-details-container h1{
+        font-size: 0.8rem;
+     }
+
+     .game-question-container{
+        height: 6rem;
+     }
+     .game-question-container h1{
+       font-size: 0.9rem;
+    }
+
+    .game-options-container span{
+        width: 90%;
+        height: 2.5rem;
+    }
+    .game-options-container span label{
+        font-size: 0.8rem;
+    }
+    .modal-content-container{
+        width: 90%;
+        height: 25rem;
+    }
+
+    .modal-content-container h1{
+        font-size: 1.2rem;
+    }
+
+    .modal-content-explanation{
+        width: 90%;
+        height: 28rem;
+    }
+
+    .modal-content-explanation h1{
+        font-size: 0.7rem;
+    }
+    
+}
+
+@media(min-width : 350px) and (max-width : 700px){
+   .game-quiz-container{
+       width: 90%;
+       height: 80vh;
+    }
+    .game-details-container h1{
+        font-size: 1rem;
+    }
+
+    .game-question-container{
+        height: 8rem;
+    }
+
+    .game-question-container h1{
+        font-size: 0.9rem;
+     }
+
+    .game-options-container span{
+        width: 90%;
+    }
+    .modal-content-container{
+        width: 90%;
+        height: 25rem;
+    }
+    .modal-content-container h1{
+        font-size: 1.2rem;
+    }
+
+    .modal-content-explanation{
+        width: 90%;
+        height: 28rem;
+    }
+
+    .modal-content-explanation h1{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
