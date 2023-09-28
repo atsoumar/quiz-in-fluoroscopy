@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="home1.css">
+</head>
+
+<body>
+    <main>
+       <div class="game-quiz-container">
+            <div class="game-details-container">
+                <h1>Quiz in Fluoroscopy</h1>
+            </div>
+
+            <div class="game-options-container">
+                <span><a href="basic.html">Basic Physics</a></span>
+                <span id="xraySystemsLink"><a href="x-ray_systems.html">X-ray Systems</a></span>
+                <span id="doseQuantitiesLink"><a href="dose_quantities.html">Dose Quantities</a></span>
+                <span><a href="radiobiology.html">Radiobiology</a></span>
+                <span><a href="radiation_protection.html">Radiation Protection</a></span>
+                <span style="margin-top: 2rem;"><a href="grades.html">Grades</a></span>
+            </div>
+       </div>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const occupations = JSON.parse(localStorage.getItem('occupations'));
+            const xraySystemsLink = document.getElementById('xraySystemsLink');
+            const doseQuantitiesLink = document.getElementById('doseQuantitiesLink');
+
+            // Check if there are occupations in the array
+            if (occupations && occupations.length > 0) {
+                // Get the last occupation in the array
+                const lastOccupation = occupations[occupations.length - 1];
+
+                // Check if the last occupation is "Nurse"
+                if (lastOccupation === 'Nurse') {
+                    xraySystemsLink.style.display = 'none';
+                    doseQuantitiesLink.style.display = 'none';
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
