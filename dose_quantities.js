@@ -1,3 +1,4 @@
+//Here we have the list of questions used in this quiz
 const questions = [
 
     {
@@ -17,11 +18,11 @@ const questions = [
         optionC: "is independent of the kV-mA characteristic used.",
         optionD: "doubles if the patient-intensifier face distance is halved.",
         correctOption: "optionB",
-        explanation:"Added filtration can reduce the patient’s entrance surface dose. In addition, enhance image quality by absorbing the lower energy x-ray photons emitted by the tube that tend to scatter more."
+        explanation:"Added filtration can reduce the patient’s entrance surface dose. In addition, it enhances image quality by absorbing the lower energy X-ray photons, emitted by the tube, which tend to scatter more."
     },
 
     {
-        question: "Which of the following is incorrect regarding entrance surface dose (ESD) ?",
+        question: "Which of the following is incorrect regarding entrance surface dose (ESD)?",
         optionA: "It is the absorbed dose in the skin at a given location on the patient.",
         optionB: "It includes the back-scattered radiation from the patient.",
         optionC: "It can be measured directly with a dosimeter on the patient or by multiplying the incident dose with a backscatter factor",
@@ -31,7 +32,7 @@ const questions = [
     },
 
     {
-        question: "A 'passive' personal dosimeter such as a film badge or 'TLD' will:",
+        question: "A 'passive' personal dosimeter such as a film badge or 'TLD' will",
         optionA: "Help protect you from the radiation and reduce the dose you receive.",
         optionB: "Absorb the radiation and become radioactive.",
         optionC: "Flash or alarm when the dose limit has been exceeded.",
@@ -41,7 +42,7 @@ const questions = [
     },
 
     {
-        question: "Which type of personnel radiation monitor can provide an immediate reading ?",
+        question: "Which type of personnel radiation monitor can provide an immediate reading?",
         optionA: "Film Badge",
         optionB: "Pocket ionization chamber",
         optionC: "TLD dosimeter",
@@ -51,17 +52,17 @@ const questions = [
     },
 
     {
-        question: "Which of the following are true regarding dosimetry ?",
+        question: "Which of the following are true regarding dosimetry?",
         optionA: "Kerma takes into account the type of tissue being irradiated.",
         optionB: "The equivalent dose takes into account the radiation weighting factor (wR).",
         optionC: "The effective dose is measured in Gy.",
         optionD: "1 Gy =1 J/g",
         correctOption: "optionB",
-        explanation:"Kerma is the kinetic energy of the secondary electrons released per unit mass of the irradiated material. It is not depend on the type of tissue being irradiated.   Equivalent dose is absorbed dose multiply by radiation weighting factor (wR). It takes into account the absorbed dose and the type of radiation. For x rays used in interventional procedures the weighting factor is 1. The effective dose is measured in Sv."
+        explanation:"Kerma is the kinetic energy of the secondary electrons released per unit mass of the irradiated material. It doesn't depend on the type of tissue being irradiated. The equivalent dose is the absorbed dose multiply by the radiation weighting factor (wR). It takes into account the absorbed dose and the type of radiation. For X-rays used in interventional procedures, the weighting factor is 1. The effective dose is measured in Sv."
     },
 
     {
-        question: "Regarding workers and dose limits:",
+        question: "Regarding workers and dose limits",
         optionA: "The dose limit for carers is the same as for the public.",
         optionB: "Trainees under the age of 18 must not receive an effective dose of more than 6 Sv.",
         optionC: "Workers must be defined as classified if their annual dose limit exceeds 20 mSv.",
@@ -71,7 +72,7 @@ const questions = [
     },
 
     {
-        question: "Regarding a patient's dose and the dose area product (DAP), which of the following statements are correct ?",
+        question: "Regarding a patient's dose and the dose area product (DAP), which of the following statements are correct?",
         optionA: "The DAP can easily be measured and is directly related to the radiation risk.",
         optionB: "The DAP can be converted to the absorbed dose using a conversion factor.",
         optionC: "For the same region of the body, the conversion factor is the same for anterior-posterior (AP) and posterior-anterior (PA) views.",
@@ -101,7 +102,7 @@ const questions = [
     },
 
     {
-        question: "Regarding dose limits:",
+        question: "Regarding dose limits",
         optionA: "The annual dose limit to the abdomen of women of reproductive capacity is 13 mSv.",
         optionB: "The dose limit for the abdomen over the period of pregnancy for a pregnant employee working with diagnostic X-rays is 1 mSv.",
         optionC: "The annual dose limit for the forearm in employees is ten times more than in members of the public.",
@@ -111,7 +112,7 @@ const questions = [
     },
 
     {
-        question: "In terms of classification of staff and designated areas, which of the following are true ?",
+        question: "In terms of classification of staff and designated areas, which of the following are true?",
         optionA: "If an employee works in a controlled area, his external dose rate could be less than 7.5 μSv/h averaged over the working day.",
         optionB: "If an employee works in a controlled area, it means that the dose to the lens of his eyes could be more than 5 mSv.",
         optionC: "In a supervised area, it is likely that any person could not exceed the dose limit for a member of the public.",
@@ -121,17 +122,17 @@ const questions = [
     },
 
     {
-        question: "What type of device is used to monitor individuals in order to determine their radiation exposure ?",
+        question: "What type of device is used to monitor individuals in order to determine their radiation exposure?",
         optionA: "thermoluminescent dosimeters (TLDs) ",
         optionB: "Geiger counter",
         optionC: "Alarm rate meter",
         optionD: "Ionization chambers",
         correctOption: "optionA",
-        explanation:"TLD is a passive device used for personal dose monitoring. TLDs are used for measuring gamma, x-ray, and beta radiation exposures. They can be worn as rings or body badges. "
+        explanation:"TLD is a passive device used for personal dose monitoring. TLDs are used for measuring gamma, X-ray, and beta radiation exposures. They can be worn as rings or body badges. "
     },
 
     {
-        question: "Effective dose can be expressed as:",
+        question: "Effective dose can be expressed as",
         optionA: "Gray",
         optionB: "Sievert",
         optionC: "J/kg",
@@ -141,7 +142,7 @@ const questions = [
     },
 
     {
-        question: "What is the recommended amount of radiation exposure for occupational workers in a year ?",
+        question: "What is the recommended amount of radiation exposure for occupational workers in a year?",
         optionA: "1 millisievert (mSv)",
         optionB: "20 mSv",
         optionC: "50 mSv",
@@ -152,7 +153,7 @@ const questions = [
 
     
     {
-        question: "What is the annual dose-limit equivalent for the skin and hands of an occupationally exposed individual ?",
+        question: "What is the annual dose-limit equivalent for the skin and hands of an occupationally exposed individual?",
         optionA: "20 millisievert (mSv)",
         optionB: "50 mSv",
         optionC: "500 mSv",
@@ -162,7 +163,7 @@ const questions = [
     },
 
     {
-        question: "What is the annual dose-limit equivalent for the eye lens of an occupationally exposed individual ?",
+        question: "What is the annual dose-limit equivalent for the eye lens of an occupationally exposed individual?",
         optionA: "20 millisievert (mSv)",
         optionB: "50 mSv",
         optionC: "500 mSv",
@@ -182,17 +183,17 @@ const questions = [
     },
 
     {
-        question: "How often should dosimeters be read and evaluated for radiation exposure ?",
-        optionA: "Every 3 months ",
+        question: "What is the recommended frequency for replacing film badges or TLDs for operators performing interventional procedures?",
+        optionA: "Every month",
         optionB: "Every 6 months",
         optionC: "Every year",
         optionD: "Every 2 years",
         correctOption: "optionA",
-        explanation:"All personnel dosimeters must be evaluated at least quarterly or promptly after replacement, whichever is more frequent."
+        explanation:"According to ICRP it is recommended that operators performing interventional procedures have their film badges or TLDs replaced on a monthly basis. Direct reading dosimeters such as pocket dosimeters or electronic personal dosimeters, must be read, and the exposures recorded, at the beginning and end of each shift, and records must be maintained (NRC Regulations Title 10, Code of Federal Regulations). Pocket dosimeters, or electronic personal dosimeters, must be checked at periods, not to exceed 12 months, for correct response to radiation. If an employee’s exposure dose is high and the work isn’t modified, the worker might exceed annual radiation safe exposure limits."
     },
 
     {
-        question: "What is the approximate radiation exposure at a distance of 1 meter from the patient if the entrance dose for a particular exam is 1200 mGy ?",
+        question: "What is the approximate radiation exposure at a distance of 1 meter from the patient if the entrance dose for a particular exam is 1200 mGy?",
         optionA: "1200 mGy",
         optionB: "120 mGy",
         optionC: "1.20 mGy",
@@ -253,10 +254,18 @@ function checkForAnswer() {
         }
     })
 
-    //checking to make sure a radio input has been checked or an option being chosen
+    
+    //checking if a radio input has been checked or an option being chosen
     if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
         document.getElementById('option-modal').style.display = "flex"
+        
+    }else {
+        // Show the explanation button when an answer is selected
+        document.getElementById('explanationButton').style.display = "block";
+        // Hide the submit button when an answer is selected
+        document.getElementById('disable').style.display = "none";
     }
+
 
     //checking if checked radio button is same as answer
     options.forEach((option) => {
@@ -266,7 +275,6 @@ function checkForAnswer() {
             indexNumber++ //adding 1 to index so has to display next question..
             //set to delay question number till when next question loads
             setTimeout(() => {
-                document.getElementById('explanation-modal').style.display = "flex"
                 questionNumber++
             }, 300)
         }
@@ -289,14 +297,18 @@ function checkForAnswer() {
 function SubmitAnswer() {
     checkForAnswer() //check if player picked right or wrong option
     unCheckRadioButtons()
-    disableSubmitButton()
 }
 
 
 //called when the next button is called
 function handleNextQuestion() {
+    // Hide the explanation button for the next question
+    document.getElementById('explanationButton').style.display = "none";
+    // Show the submit button for the next question
+    document.getElementById('disable').style.display = "block";
+
     unCheckRadioButtons()
-    undisableSubmitButton()
+    
         if (indexNumber <= 19) {
 //displays next question as long as index number isn't greater than 19, remember index number starts from 0, so index 19 is question 20
             NextQuestion(indexNumber)
@@ -323,17 +335,8 @@ function unCheckRadioButtons() {
     }
 }
 
-function disableSubmitButton() {
-    // capturing the button using its id
-    const button1 = document.getElementById("disable");
-    // function to disable the button
-    button1.disabled = true;
-}
-
-function undisableSubmitButton() {
-    // capturing the button using its id
-    const button1 = document.getElementById("disable");
-    button1.disabled = false;
+function explanationButton(){
+    document.getElementById('explanation-modal').style.display = "flex"
 }
 
 // function for when all questions being answered
@@ -381,8 +384,8 @@ function handleEndGame() {
 
     // Save the updated grades array to local storage
     localStorage.setItem('grades', JSON.stringify(grades));
-
-    const quizName = "Dose quantities";
+    
+    const quizName = "Dose Quantities";
 
     // Retrieve existing data from local storage
     var storedQuizNames = localStorage.getItem('quizNames');
@@ -397,7 +400,6 @@ function handleEndGame() {
     quizNames.push(quizName);
     // Save the updated array to local storage
     localStorage.setItem('quizNames', JSON.stringify(quizNames));
-
 }
 
 function showQuestions() {

@@ -1,3 +1,4 @@
+//Here we have the list of questions used in this quiz
 const questions = [
     {
         question: "The use of antiscatter grid (Bucky) in fluoroscopic systems is to",
@@ -10,18 +11,18 @@ const questions = [
     },
 
     {
-        question: "What is a C-arm in fluoroscopy ?",
+        question: "What is a C-arm in fluoroscopy?",
         optionA: "A type of contrast agent used in fluoroscopy",
         optionB: "A type of X-ray detector used in fluoroscopy",
         optionC: "A mobile fluoroscopy machine with an arched arm",
         optionD: "A type of computer used to process fluoroscopy images",
         correctOption: "optionC",
-        explanation:"C-Arm gets its name from the C-shaped arm present in the device, which is used to connect the x-ray source and the detector. These C-Arm machines are widely used during orthopedic, complicated surgical, pain management (Anesthetics) and emergency procedures."
+        explanation:"C-Arm gets its name from the C-shaped arm present in the device, which is used to connect the X-ray source and the detector. These C-Arm machines are widely used during orthopedic, complicated surgical, pain management (Anesthetics) and emergency procedures."
     },
 
 
     {
-        question: "What is the main difference between continuous and pulsed-beam operation modes in fluoroscopy ?",
+        question: "What is the main difference between continuous and pulsed-beam operation modes in fluoroscopy?",
         optionA: "The type of X-ray machine used",
         optionB: "The amount of radiation exposure to the patient",
         optionC: "The speed at which images are acquired",
@@ -31,27 +32,27 @@ const questions = [
     },
 
     {
-        question: "Which of the following is a disadvantage of pulsed-beam operation mode in fluoroscopy ?",
+        question: "Which of the following is a disadvantage of pulsed-beam operation mode in fluoroscopy?",
         optionA: "Higher radiation dose to the patient",
         optionB: "Longer procedure times compared to continuous mode",
         optionC: "Reduced image quality in high-motion areas",
         optionD: "Only suitable for certain types of procedures",
         correctOption: "optionC",
-        explanation:"One potential drawback of pulsed fluoroscopy is the possible loss of diagnostic information. High frame rates are typically beneficial for dynamic procedures where there is rapid movement or changes in the data being captured. However, if neither the patient nor the anatomical part being imaged is moving rapidly, a lower frame rate may be sufficient for imaging purposes."
+        explanation:"One potential drawback of pulsed-beam fluoroscopy is the possible loss of diagnostic information. High frame rates are typically beneficial for dynamic procedures where there is rapid movement or changes in the data being captured. However, if neither the patient nor the anatomical part being imaged is moving rapidly, a lower frame rate may be sufficient for imaging purposes."
     },
 
     {
-        question: "What is high filtration of the beam in fluoroscopy ?",
+        question: "What is high filtration of the beam in fluoroscopy?",
         optionA: "The use of a higher dose of contrast agent during the procedure",
         optionB: "The use of a higher voltage setting on the X-ray machine",
         optionC: "The use of a thicker X-ray filter to reduce low-energy X-rays",
         optionD: "The use of a thinner X-ray filter to increase image sharpness",
         correctOption: "optionC",
-        explanation:"Filtering is the removal of these low energy x-rays from the beam spectrum which would otherwise not contribute to image quality but would add to patient dose and scatter."
+        explanation:"Filtering is the removal of low energy X-rays from the beam spectrum which would otherwise not contribute to image quality but would add to patient dose and scatter."
     },
 
     {
-        question: "In which type of procedure would high filtration of the beam be most important ?",
+        question: "In which type of procedure would high filtration of the beam be most important?",
         optionA: "Pediatric procedures",
         optionB: "Orthopedic procedures",
         optionC: "Gastrointestinal procedures",
@@ -71,19 +72,19 @@ const questions = [
     },
 
     {
-        question: "What is the primary purpose of the glass housing on the image intensifier ?",
+        question: "What is the primary purpose of the glass housing on the image intensifier?",
         optionA: "protect the anode assembly",
         optionB: "protect the cathode assembly",
         optionC: "provide a vacuum",
         optionD: "provide protection from radiation leakage",
         correctOption: "optionC",
-        explanation:"Image intensifier is an evacuated glass envelop (vacuum bottle)."
+        explanation:"Image intensifier is an evacuated glass envelope (vacuum bottle)."
     },
 
     {
-        question: "What is the component of the image intensifier responsible for focusing the electron beam ?",
-        optionA: "the input phosphor ",
-        optionB: "the output phosphor ",
+        question: "What is the component of the image intensifier responsible for focusing the electron beam?",
+        optionA: "the input phosphor",
+        optionB: "the output phosphor",
         optionC: "the photocathode",
         optionD: "electrostatic lenses",
         correctOption: "optionD",
@@ -91,27 +92,27 @@ const questions = [
     },
 
     {
-        question: "How could you double the number of incident electrons produced <br> 1.double your mA <br>2.double your time <br> 3.increase your kVp by 15% ?",
+        question: "How could you double the number of incident electrons produced? <br> 1.double your mA <br>2.double your time <br> 3.increase your kVp by 15%",
         optionA: "1 and 2 ",
         optionB: "1 and 3",
         optionC: "2 and 3",
         optionD: "1,2 and 3",
         correctOption: "optionD",
-        explanation:"The mA or the time are both linearly proportional to the number of x-rays. The number of x-rays is proportional to kVp^2. Increasing the kVp by 15% is equivalent to doubling the mAs, which results in doubling the quantity of radiation."
+        explanation:"The mA or the time are both linearly proportional to the number of X-rays. The number of X-rays is proportional to kVp^2. Increasing the kVp by 15% is equivalent to doubling the mAs, which results in doubling the quantity of radiation."
     },
 
     {
-        question: "What is the function of the image intensifier in fluoroscopy ?",
+        question: "What is the function of the image intensifier in fluoroscopy?",
         optionA: "To filter the X-ray beam to reduce patient radiation exposure",
         optionB: "To convert X-rays into visible light for image acquisition",
         optionC: "To increase the voltage of the X-ray beam for higher quality images",
         optionD: "To deliver contrast agent directly to the area of interest",
         correctOption: "optionB",
-        explanation:"In a typical image intensifier, The input phosphor absorbs the X-ray photons and emits visible light photons in response. The light photons are then directed towards a photocathode, where they are converted into electrons. The resulting electrons are accelerated and focused by an electrostatic field as they travel through a vacuum towards the output phosphor. The output phosphor absorbs the electrons and emits visible light photons, which can be captured and recorded by various imaging devices."
+        explanation:"In a typical image intensifier, the input phosphor absorbs the X-ray photons and emits visible light photons in response. The light photons are then directed towards a photocathode, where they are converted into electrons. The resulting electrons are accelerated and focused by an electrostatic field as they travel through a vacuum towards the output phosphor. The output phosphor absorbs the electrons and emits visible light photons, which can be captured and recorded by various imaging devices."
     },
 
     {
-        question: "How does decreasing the distance between the patient and the image intensifier affect image magnification ?",
+        question: "How does decreasing the distance between the patient and the image intensifier affect image magnification?",
         optionA: "It increases image magnification",
         optionB: "It decreases image magnification",
         optionC: "It has no effect on image magnification",
@@ -121,7 +122,7 @@ const questions = [
     },
 
     {
-        question: "What is the main benefit of using a larger image intensifier in fluoroscopy ?",
+        question: "What is the main benefit of using a larger image intensifier in fluoroscopy?",
         optionA: "It reduces patient radiation exposure",
         optionB: "output spatial resolution higher.",
         optionC: "image distortion lower",
@@ -131,7 +132,7 @@ const questions = [
     },
 
     {
-        question: "What is the purpose of automatic brightness control (ABC) in fluoroscopy ?",
+        question: "What is the purpose of automatic brightness control (ABC) in fluoroscopy?",
         optionA: "To maintain a consistent image brightness throughout the exam",
         optionB: "To reduce radiation dose to the patient",
         optionC: "To improve image resolution",
@@ -141,7 +142,7 @@ const questions = [
     },
 
     {
-        question: "What is the purpose of high- and low-dose operation modes in fluoroscopy ?",
+        question: "What is the purpose of high- and low-dose operation modes in fluoroscopy?",
         optionA: "To provide the operator with flexibility in choosing the appropriate dose for the patient and the procedure",
         optionB: "To reduce the radiation dose to the patient",
         optionC: "To improve image resolution",
@@ -157,7 +158,7 @@ const questions = [
         optionC: "mA and kV; low brightness",
         optionD: "only kV; constant brightness",
         correctOption: "optionB",
-        explanation:"Automatic brightness control (ABC) is used to ensure that the brightness of the image at the monitor is constant by automatic adjustment of kVp and/or mAs when moving the x-ray tube across different anatomical regions. ABC systems are analogous to the AEC systems used in radiography."
+        explanation:"Automatic brightness control (ABC) is used to ensure that the brightness of the image at the monitor is constant by automatic adjustment of kVp and/or mAs when moving the X-ray tube across different anatomical regions. ABC systems are analogous to the AEC systems used in radiography."
     },
 
     {
@@ -181,17 +182,17 @@ const questions = [
     },
 
     {
-        question: "Regarding magnification in fluoroscopy:",
+        question: "Regarding magnification in fluoroscopy",
         optionA: "In the magnified mode, the focal point is closer to the output screen.",
         optionB: "In magnification, both brightness and spatial resolution are increased.",
         optionC: "A change in voltage of the intermediate electrodes will magnify the image.",
         optionD: "In the magnified view, both patient skin dose and effective dose increase in comparison with the full field of view without any collimation.",
         correctOption: "optionC",
-        explanation:"When in magnification mode, the focal point is brought closer to the input screen, which results in increased spatial resolution but reduced brightness or gain on the output screen. This decrease in brightness can be compensated for by increasing the exposure factors, which in turn increases the patient's skin dose. Despite the increase in skin dose, the effective dose is less compared to a full field of view without collimation because the surface area being exposed is reduced. This is because the magnification reduces the field of view and limits exposure to the region of interest."
+        explanation:"When in magnification mode, the focal point is brought closer to the input screen, which results in increased spatial resolution but reduced brightness or gain on the output screen. This decrease in brightness can be compensated for by increasing the exposure factors, which in turn increases the patient's skin dose. Despite the increase in skin dose, the effective dose is less compared to a full field of view without collimation because the exposed surface area is reduced. This is because the magnification reduces the field of view and limits exposure to the region of interest."
     },
 
     {
-        question: "Regarding the automatic brightness control (ABC) in fluoroscopy:",
+        question: "Regarding the automatic brightness control (ABC) in fluoroscopy",
         optionA: "In a high kV protocol, because the kV is at the maximum, the patient dose increases.",
         optionB: "In a contrast study, the mA is kept near constant while the kV increases with radiological thickness.",
         optionC: "A high kV mode is used in paediatric imaging.",
@@ -201,7 +202,7 @@ const questions = [
     },
 
     {
-        question: "Radiological image unsharpness increases ",
+        question: "Radiological image unsharpness increases",
         optionA: "as the object to receptor distance increases.",
         optionB: "as the source to object distance increases.",
         optionC: "if a grid is used.",
@@ -231,27 +232,27 @@ const questions = [
     },
 
     {
-        question: "Which of the following techniques is usually used by the fluoroscopic imaging ?",
+        question: "Which of the following techniques is usually used by the fluoroscopic imaging?",
         optionA: "Low kVp, low mA",
         optionB: "High kVp, high mA",
         optionC: "High kVp, low mA",
         optionD: "Low kVp, high mA",
         correctOption: "optionC",
-        explanation:"High kVp and low mA techniques help to reduce radiation exposure to the patient by using a higher voltage and lower current. This results in a higher energy beam that is more penetrative and can pass through the patient more easily, reducing the need for higher doses. Image intensification is another technique that can increase the brightness of the fluoroscopic image, which can help to reduce the dose required to obtain a clear image. "
+        explanation:"High kVp and low mA techniques help to reduce radiation exposure to the patient by using a higher voltage and lower current. This results in a higher energy beam that is more penetrative and can pass through the patient more easily, reducing the need for higher doses. Image intensification is another technique that can increase the brightness of the fluoroscopic image, which can help to reduce the dose required to obtain a clear image."
     },
 
     {
-        question: "Decreasing the tube voltage (kV), which of the following is incorrect ?",
+        question: "Decreasing the tube voltage (kV), which of the following is incorrect?",
         optionA: "It reduces the number of electrons colliding with the target",
         optionB: "It reduces the photon fluence",
         optionC: "It reduces the beam intensity",
         optionD: "The rate of photoelectric attenuation increases more than the rate of Compton attenuation",
         correctOption: "optionA",
-        explanation:"The number of electrons (tube current, mA) is controlled by the filament voltage. Although the number of filament electrons produced are unaffected by kV, the number of photons created in the target per electron decreases with a reduction in kV"
+        explanation:"The number of electrons (tube current, mA) is controlled by the filament voltage. Although the number of filament electrons produced are unaffected by kV, the number of photons created in the target per electron decreases with a reduction in kV."
     },
 
     {
-        question: "Which of the following increase X-ray beam intensity at a given point from a source ?",
+        question: "Which of the following increases X-ray beam intensity at a given point from a source?",
         optionA: "Increasing the filter thickness",
         optionB: "Increasing the distance",
         optionC: "Increasing the tube voltage",
@@ -261,7 +262,7 @@ const questions = [
     },
 
     {
-        question: "Which of the following is incorrect with regard to X-ray production ?",
+        question: "Which of the following is incorrect with regard to X-ray production?",
         optionA: "Increasing the tube voltage increases the heat production at the target",
         optionB: "Reducing the actual focal spot reduces the heat load on the target",
         optionC: "Increasing the target angle increases the effective focal spot",
@@ -271,17 +272,17 @@ const questions = [
     },
 
     {
-        question: "Which of the following factors increase the brightness of the fluoroscopic image ?",
+        question: "Which of the following factors increase the brightness of the fluoroscopic image?",
         optionA: "increase Milliamperes",
         optionB: "decrease Kilovolts",
         optionC: "increase patient thickness and tissue density",
         optionD: "Automatic Brightness Control",
         correctOption: "optionA",
-        explanation:"Increase of mA and kVp multiplies the number of x-ray photons incident on the image intensifier, and therefore image brightness increases. An increase in patient thickness reduces the number of x-ray photons reaching the image intensifier, thereby decreasing the image brightness. ABC allows the fluoroscopic unit to automatically maintain the brightness level of the image for variations of patient thickness and attenuation."
+        explanation:"Increase of mA and kVp multiplies the number of X-ray photons incident on the image intensifier, and therefore image brightness increases. An increase in patient thickness reduces the number of X-ray photons reaching the image intensifier, thereby decreasing the image brightness. ABC allows the fluoroscopic unit to automatically maintain the brightness level of the image for variations of patient thickness and attenuation."
     },
 
     {
-        question: "Reduction in brightness at the perphery of the image is termed ________.",
+        question: "Reduction in brightness at the periphery of the image is termed ________.",
         optionA: "Contrast",
         optionB: "Noise",
         optionC: "Distortion",
@@ -291,7 +292,7 @@ const questions = [
     },
 
     {
-        question: "What are the advantages of beam restriction using a collimator ?",
+        question: "What are the advantages of beam restriction using a collimator?",
         optionA: "More scattered radiation is produced",
         optionB: "Less biologic material is irradiated and less scattered radiation is produced",
         optionC: "Less total filtration will be necessary",
@@ -302,7 +303,7 @@ const questions = [
     
     {
         question: "Which of the following statements is (are) true concerning radiation safety in fluoroscopy?",
-        optionA: "Tabletop radiation intensity must not exceed 100mGy/min.",
+        optionA: "Tabletop radiation intensity must not exceed 100 mGy/min.",
         optionB: "Tabletop radiation intensity must not exceed 21 mGy/min/mA.",
         optionC: "In high-level fluoroscopy, tabletop intensity up to 200 mGy/min is permitted.",
         optionD: "All of these",
@@ -363,10 +364,18 @@ function checkForAnswer() {
         }
     })
 
-    //checking to make sure a radio input has been checked or an option being chosen
+    
+    //checking if a radio input has been checked or an option being chosen
     if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
         document.getElementById('option-modal').style.display = "flex"
+        
+    }else {
+        // Show the explanation button when an answer is selected
+        document.getElementById('explanationButton').style.display = "block";
+        // Hide the submit button when an answer is selected
+        document.getElementById('disable').style.display = "none";
     }
+
 
     //checking if checked radio button is same as answer
     options.forEach((option) => {
@@ -376,7 +385,6 @@ function checkForAnswer() {
             indexNumber++ //adding 1 to index so has to display next question..
             //set to delay question number till when next question loads
             setTimeout(() => {
-                document.getElementById('explanation-modal').style.display = "flex"
                 questionNumber++
             }, 300)
         }
@@ -399,14 +407,18 @@ function checkForAnswer() {
 function SubmitAnswer() {
     checkForAnswer() //check if player picked right or wrong option
     unCheckRadioButtons()
-    disableSubmitButton()
 }
 
 
 //called when the next button is called
 function handleNextQuestion() {
+    // Hide the explanation button for the next question
+    document.getElementById('explanationButton').style.display = "none";
+    // Show the submit button for the next question
+    document.getElementById('disable').style.display = "block";
+
     unCheckRadioButtons()
-    undisableSubmitButton()
+    
         if (indexNumber <= 29) {
 //displays next question as long as index number isn't greater than 29, remember index number starts from 0, so index 29 is question 30
             NextQuestion(indexNumber)
@@ -433,17 +445,8 @@ function unCheckRadioButtons() {
     }
 }
 
-function disableSubmitButton() {
-    // capturing the button using its id
-    const button1 = document.getElementById("disable");
-    // function to disable the button
-    button1.disabled = true;
-}
-
-function undisableSubmitButton() {
-    // capturing the button using its id
-    const button1 = document.getElementById("disable");
-    button1.disabled = false;
+function explanationButton(){
+    document.getElementById('explanation-modal').style.display = "flex"
 }
 
 // function for when all questions being answered
@@ -452,11 +455,11 @@ function handleEndGame() {
     let remarkColor = null
 
     // condition check for player remark and remark color
-    if (playerScore <= 14) {
+    if (playerScore <= 15) {
         remark = "Inadequate knowledge, Keep Practicing."
         remarkColor = "red"
     }
-    else if (playerScore >= 15 && playerScore < 26) {
+    else if (playerScore >= 16 && playerScore < 26) {
         remark = "Average knowledge, You can do better."
         remarkColor = "orange"
     }
@@ -474,6 +477,9 @@ function handleEndGame() {
     document.getElementById('right-answers').innerHTML = playerScore
     document.getElementById('score-modal').style.display = "flex"
 
+    // Show the "Show Questions and Answers" button
+    document.getElementById('show-questions-btn').style.display = "block";
+
     // Retrieve existing grades from local storage
     var storedGrades = localStorage.getItem('grades');
     var grades = [];
@@ -488,8 +494,8 @@ function handleEndGame() {
 
     // Save the updated grades array to local storage
     localStorage.setItem('grades', JSON.stringify(grades));
-
-    const quizName = "X-ray systems";
+    
+    const quizName = "X-ray Systems";
 
     // Retrieve existing data from local storage
     var storedQuizNames = localStorage.getItem('quizNames');
@@ -504,7 +510,6 @@ function handleEndGame() {
     quizNames.push(quizName);
     // Save the updated array to local storage
     localStorage.setItem('quizNames', JSON.stringify(quizNames));
-
 }
 
 function showQuestions() {

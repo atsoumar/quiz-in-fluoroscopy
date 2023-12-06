@@ -142,6 +142,10 @@ input[type=radio]:checked ~ .option {
     color:  white;
 }
 
+#explanationButton{
+    display: none;
+}
+
 .modal-container{
     display: none;
     position: fixed;
@@ -341,22 +345,19 @@ input[type=radio]:checked ~ .option {
         height: 80vh;
      }
      .game-details-container h1{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
      }
 
      .game-question-container{
         height: 6rem;
      }
      .game-question-container h1{
-       font-size: 0.9rem;
+       font-size: 0.7rem;
     }
 
     .game-options-container span{
         width: 90%;
-        height: 2.5rem;
-    }
-    .game-options-container span label{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     .modal-content-container{
         width: 90%;
@@ -375,6 +376,9 @@ input[type=radio]:checked ~ .option {
     .modal-content-explanation h1{
         font-size: 0.7rem;
     }
+    .next-button-container button{
+        font-size: 0.6rem;
+    }
     
 }
 
@@ -384,11 +388,11 @@ input[type=radio]:checked ~ .option {
        height: 80vh;
     }
     .game-details-container h1{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .game-question-container{
-        height: 8rem;
+        height: 7rem;
     }
 
     .game-question-container h1{
@@ -397,6 +401,7 @@ input[type=radio]:checked ~ .option {
 
     .game-options-container span{
         width: 90%;
+        font-size: 0.7rem;
     }
     .modal-content-container{
         width: 90%;
@@ -413,6 +418,10 @@ input[type=radio]:checked ~ .option {
 
     .modal-content-explanation h1{
         font-size: 0.8rem;
+    }
+
+    .next-button-container button{
+        font-size: 0.7rem;
     }
 }
 

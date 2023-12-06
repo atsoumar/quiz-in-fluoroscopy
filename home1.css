@@ -126,6 +126,9 @@ span a:hover{
     .game-options-container span label{
         font-size: 0.8rem;
     }
+    .game-options-container a{
+        font-size: 0.9rem;
+    }
     .modal-content-container{
         width: 90%;
         height: 25rem;
@@ -155,6 +158,9 @@ span a:hover{
 
     .game-options-container span{
         width: 90%;
+    }
+    .game-options-container a{
+        font-size: 1rem;
     }
     .modal-content-container{
         width: 90%;
@@ -245,4 +251,47 @@ input::placeholder {
     transform: scale(1);
     color:  white;
     background-color: rgb(38, 21, 219);
+}
+.manual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: gray;
+    color: #f0f4f7;
+    padding: 5px;
+    font-size: 1rem;
+}
+.manual:hover{
+    -ms-transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    transform: scale(1);
+    color:  white;
+    background-color: rgb(107, 107, 111);
+}
+.modal {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    overflow: auto;
+}
+
+.modal p {
+    height: 70%; /* Adjust the height as needed */
+    overflow-y: auto;
+    padding: 20px;
+    max-width: 60%;
+    border-radius: 5px;
+    color: #333; /* Set the text color */
+    background-color: #f7f7f7; /* Set the background color */
+    border: 1px solid #ccc; /* Add borders or styling as desired */
+    text-align: justify;
 }

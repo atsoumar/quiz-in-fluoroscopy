@@ -14,7 +14,10 @@
        <div class="game-quiz-container">
             <div class="game-details-container">
                 <h1>Quiz in Fluoroscopy</h1>
+                
             </div>
+
+            
 
             <div class="game-options-container">
                 <form id="quizForm">
@@ -27,9 +30,12 @@
                         <option value="personnel">Other personnel</option>
                     </select>
                     <button type="submit" class="btn" id="SubmitBtn" onclick="saveHighScore(event)"> Submit </button>
+                    <button type="button" class="manual" id="userManualBtn">☰ User Manual</button>
                 </form>
-            
+                    
+                   
             </div>
+            
        </div>
 
     </main>
@@ -73,6 +79,89 @@
             // Redirect to another page 
             window.location.href = 'home1.html';
         }
+
+        // Get the button element
+const userManualBtn = document.getElementById('userManualBtn');
+
+// Function to display the user manual in a modal
+userManualBtn.addEventListener('click', function() {
+    // Define the user manual content (replace this with your user manual content)
+    const userManualContent = `
+        <p><strong>User Manual: Radiation Protection in Fluoroscopy Educational Tool for Healthcare Professionals</strong><br>
+
+<br><strong>Introduction</strong><br>
+Welcome to the Radiation Protection in Fluoroscopy Educational Tool for Healthcare Professionals! This tool has been developed to provide comprehensive education on radiation protection in fluoroscopy for physicians, technologists, nurses, and allied health personnel. Also, can serve as an evaluation test in order to assess the acquired knowledge. The tool covers various topics and is organized into five multiple-choice quizzes.
+<br>
+<br><strong>System Requirements</strong><br>
+To access and use the tool, ensure you have a modern web browser. This tool is compatible with most browsers such as Google Chrome, Mozilla Firefox, Safari, or Microsoft Edge.
+<br>
+<br><strong>Navigation</strong><br>
+•	Log-in page: Upon entering the tool, you'll find the page where users submit their personal data, type username and select occupation.
+<br>•	Quizzes: Click on the quiz titles to start each corresponding quiz.
+<br>•	Multiple-choice Questions: Answer each question by selecting the correct choice and proceed to the next question.
+<br>
+<br><strong>Quiz Structure</strong><br>
+•	There are five quizzes available, each dedicated to a specific aspect of radiation protection in fluoroscopy.
+<br>•	Questions are randomly selected from a pool of questions for each quiz to ensure variety and prevent repetition.
+<br>•	The Quiz provides explanation for each question after an answer is selected.
+<br>•	Once the user completes a quiz, the tool displays the final score and provides feedback on the results.
+<br>
+<br><strong>Topics Covered</strong><br>
+1.	Basic Aspects of Physics
+<br>2.	X-ray Systems in Fluoroscopy
+<br>3.	Dose Quantities
+<br>4.	Radiobiology
+<br>5.	Radiation Protection of Patients and Staff
+<br>
+<br><strong>Accessing Results</strong><br>
+•	The tool saves your quiz scores in the local storage of your browser. Please note that your scores will only be available on the browser where the quiz was taken.
+<br>•	Scores won't be accessible if you switch browsers or devices.
+<br>
+<br><strong>Additional Information</strong><br>
+•	The tool was developed using HTML, CSS, and JavaScript.
+<br>•	An extensive literature review was conducted to curate relevant content for comprehensive education on radiation protection in fluoroscopy.
+<br>
+<br><strong>Feedback and Contact</strong><br>
+We welcome your feedback and suggestions for improvement. For any inquiries or assistance, please contact atsoumar4@gmail.com
+<br>
+<br><strong>Disclaimer</strong><br>
+While the tool aims to provide educational information, it's important to consult authoritative sources and guidelines for professional advice on radiation protection.
+<br>
+<br>Thank you for using the Radiation Protection in Fluoroscopy Educational Tool for Healthcare Professionals. Enjoy learning and enhancing your understanding of radiation protection in fluoroscopy!
+<br>
+<br><strong>References</Strong><br>
+•	Shahzad Ilyas, et.al. Physics MCQs for the Part 1 FRCR. New York : Cambridge University Press, 2011.
+<br>•	Bushberg et.al. The essential physics of medical imaging. s.l. : Lippincott Williams & Wilkins, 2011.
+<br>•	IAEA. Diagnostic radiology physics : a handbook for teachers and students. Vienna : International atomic energy agency, 2014.
+<br>•	International Commission on Radiological Protection. ICRP Publication 103 The 2007 Recommendations of the International Commission on Radiological Protection. s.l. : Elsevier, 2007.
+<br>•	International Atomic Energy Agency. Dosimetry in diagnostic radiology: an international code of practice. IAEA Technical Report Series No 457. Vienna : International Atomic Energy Agency, 2007.
+<br>•	International Atomic Energy Agency. Radiation protection and safety of radiation sources: International basic safety standards. IAEA Safety Standards Series No. GSR Part 3, 2018.
+<br>•   Fotios O Efthymiou, Vasileios I Metaxas, Christos P Dimitroukas, Stavros K Kakkos, George S Panayiotakis. KERMA-AREA PRODUCT, ENTRANCE SURFACE DOSE AND EFFECTIVE DOSE IN ABDOMINAL ENDOVASCULAR ANEURYSM REPAIR. Radiat Prot Dosimetry. 2021, Vols. 194(2-3), pp. 121-134.
+<br>•   Metaxas V I, Messaris G A, Gatzounis G D, & Panayiotakis G S. Patient Dose in Fluoroscopically Guided Cervical Discectomy and Fusion. Radiation Protection Dosimetry. 2016, Vol. 174(4), pp. 575-582.
+<br>•	Ploussi, A., Efstathopoulos, E. P., & Brountzos, E. The Importance of Radiation Protection Education and Training for Medical Professionals of All Specialties. CardioVascular and Interventional Radiology. 2021, Vol. 44(6), pp. 829-834.
+<br><br> Click outside the box to exit the manual.
+</p>
+       
+
+       
+    `;
+
+    // Create a modal element
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.innerHTML = userManualContent;
+
+    // Append the modal to the body
+    document.body.appendChild(modal);
+
+    // Close the modal when the user clicks outside of it
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.remove();
+        }
+    });
+});
+
 
     </script>
 

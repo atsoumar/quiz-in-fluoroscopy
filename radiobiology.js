@@ -1,26 +1,27 @@
+//Here we have the list of questions used in this quiz
 const questions = [
     {
-        question: "What is the main target of ionizing radiation in the human body ?",
+        question: "What is the main target of ionizing radiation in the human body?",
         optionA: "DNA",
         optionB: "Proteins",
         optionC: "Carbohydrates",
         optionD: "Lipids",
         correctOption: "optionA",
-        explanation: "Damage to DNA caused by ionizing radiation leads to mutations in somatic cells, often resulting in cancer; mutations of germ cells lead to hereditary mutations and, theoretically, genetic diseases."
+        explanation: "Damage to DNA caused by ionizing radiation leads to mutations in somatic cells, often resulting in cancer. Mutations of germ cells lead to hereditary mutations and, theoretically, genetic diseases."
     },
 
     {
-        question: "What is the term used to describe the sum of the energy deposited in tissue per unit path length it travels ?",
+        question: "What is the term used to describe the sum of the energy deposited in tissue per unit path length it travels?",
         optionA: "Energy transfer coefficient",
         optionB: "Ionization potential",
         optionC: "Absorbed dose rate",
         optionD: "Linear energy transfer",
         correctOption: "optionD",
-        explanation:"Linear, meaning the radiation travels in a line. And energy transfer, meaning how much of the radiation’s energy is transferred into the material it’s going through. Low-LET radiation is from external electromagnetic radiation such as x-rays that have neither mass nor charge. Low-LET radiation penetrates tissues very easily and for any event deposit energy very rarely."
+        explanation:"Linear, meaning the radiation travels in a line. And energy transfer, meaning how much of the radiation’s energy is transferred into the material it’s going through. Low-LET radiation is from external electromagnetic radiation such as X-rays that have neither mass nor charge. Low-LET radiation penetrates tissues very easily and for any event deposits energy very rarely."
     },
 
     {
-        question: "What is the term used to describe the ability of a radiation type to cause biological damage ?",
+        question: "What is the term used to describe the ability of a radiation type to cause biological damage?",
         optionA: "Ionization potential",
         optionB: "Energy transfer coefficient",
         optionC: "Relative biological effectiveness",
@@ -30,9 +31,9 @@ const questions = [
     },
 
     {
-        question: "During an accident at work, if someone receives a radiation exposure of 100 milli Sieverts, what effect will this have on his/her health ?",
-        optionA: "Hair loss.",
-        optionB: "No effect will be observed immediately but he will have a slightly greater risk of getting cancer later in life.",
+        question: "During an accident at work, if someone receives a radiation exposure of 100 milli Sieverts, what effect will this have on his/her health?",
+        optionA: "Hair loss",
+        optionB: "No effect will be observed immediately but he will have a slightly greater risk of getting cancer later in life",
         optionC: "skin erythema",
         optionD: "None at all",
         correctOption: "optionB",
@@ -40,7 +41,7 @@ const questions = [
     },
 
     {
-        question: "What is the term used to describe the process by which cells divide and grow uncontrollably, often leading to cancer ?",
+        question: "What is the term used to describe the process by which cells divide and grow uncontrollably, often leading to cancer?",
         optionA: "Metastasis",
         optionB: "Differentiation",
         optionC: "Apoptosis",
@@ -50,7 +51,7 @@ const questions = [
     },
 
     {
-        question: "Which type of effect is directly proportional to the radiation dose received ?",
+        question: "Which type of effect is directly proportional to the radiation dose received?",
         optionA: "Stochastic effect",
         optionB: "Deterministic effect",
         optionC: "Both types of effects are directly proportional to the radiation dose received.",
@@ -60,7 +61,7 @@ const questions = [
     },
 
     {
-        question: "What is the difference between deterministic and stochastic effects ?",
+        question: "What is the difference between deterministic and stochastic effects?",
         optionA: "Deterministic effects occur above a threshold dose and severity depends on dose, but stochastic effects occur by chance and without a threshold level of dose",
         optionB: "Deterministic effects occur by chance and without a threshold level of dose, but stochastic effects occur above a threshold dose and severity depends on dose",
         optionC: "Deterministic and stochastic effects are the same",
@@ -70,7 +71,7 @@ const questions = [
     },
 
     {
-        question: "What poses the most risk to personnel during fluoroscopy ?",
+        question: "What poses the most risk to personnel during fluoroscopy?",
         optionA: "direct radiation",
         optionB: "scatter radiation",
         optionC: "neither direct radiation nor scatter radiation",
@@ -80,7 +81,7 @@ const questions = [
     },
 
     {
-        question: "Which of the following best describes the biological effects of chronic radiation exposure ?",
+        question: "Which of the following best describes the biological effects of chronic radiation exposure?",
         optionA: "They are longer-lasting than the effects of acute radiation exposure",
         optionB: "They are shorter-lasting than the effects of acute radiation exposure",
         optionC: "They are identical to the effects of acute radiation exposure",
@@ -90,7 +91,7 @@ const questions = [
     },
 
     {
-        question: "Which of the following organs is most sensitive to radiation in children ?",
+        question: "Which of the following organs is most sensitive to radiation in children?",
         optionA: "Brain",
         optionB: "Liver",
         optionC: "Heart",
@@ -100,7 +101,7 @@ const questions = [
     },
 
     {
-        question: "Which of the following effects of ionizing radiation occurs with a probability that is NOT proportional to the received radiation dose ?",
+        question: "Which of the following effects of ionizing radiation occurs with a probability that is NOT proportional to the received radiation dose?",
         optionA: "Stochastic effect ",
         optionB: "skin erythema",
         optionC: "Cataract induction",
@@ -120,7 +121,7 @@ const questions = [
     },
 
     {
-        question: "Which of the following is incorrect about fetus and exposure to radiation ?",
+        question: "Which of the following is incorrect about fetus and exposure to radiation?",
         optionA: "A fetal absorbed dose less than 0.1 Gy should be considered as a ground for abortion.",
         optionB: "Radiation exposure exceeding 0.1 Gy at an early stage of pregnancy (preimplantation period) may lead to miscarriage.",
         optionC: "Radiation exposure exceeding 0.1 Gy during organogenesis period may cause dysplasia (malformation).",
@@ -130,7 +131,7 @@ const questions = [
     },
 
     {
-        question: "What is the threshold value and the incubation period for the cataract effect ?",
+        question: "What is the threshold value and the incubation period for the cataract effect?",
         optionA: "Approx. 1 Gy and incubation period 10 years or longer",
         optionB: "Approx. 0.5 Gy and incubation period 10 years or longer",
         optionC: "Approx. 0.5 Gy and incubation period 20 years or longer",
@@ -140,7 +141,7 @@ const questions = [
     },
 
     {
-        question: "What is the threshold value and the incubation period for the skin burn effect ?",
+        question: "What is the threshold value and the incubation period for the skin burn effect?",
         optionA: "10 Gy or more and incubation period 2 to 3 weeks",
         optionB: "3 Gy and incubation period 2 months",
         optionC: "1 to 3 Gy and incubation period 2 to 3 days",
@@ -150,7 +151,7 @@ const questions = [
     },
 
     {
-        question: "What is the threshold value and the incubation period for the temporary sterility ?",
+        question: "What is the threshold value and the incubation period for the temporary sterility?",
         optionA: "10 Gy or more and incubation period 2 to 3 weeks",
         optionB: "Approx. 0.1 Gy and incubation period 3 to 9 weeks",
         optionC: "1 to 3 Gy and incubation period 2 to 3 days",
@@ -160,7 +161,7 @@ const questions = [
     },
 
     {
-        question: "What is the threshold value and the incubation period for the deterioration of hemopoietic capacity ?",
+        question: "What is the threshold value and the incubation period for the deterioration of hemopoietic capacity?",
         optionA: "Approx. 10 Gy and incubation period 2 to 3 weeks",
         optionB: "Approx. 0.5 Gy and incubation period 3 to 7 days",
         optionC: "1 to 3 Gy and incubation period 2 to 3 days",
@@ -170,7 +171,7 @@ const questions = [
     },
 
     {
-        question: "Which type of tissue is most sensitive to ionizing radiation ?",
+        question: "Which type of tissue is most sensitive to ionizing radiation?",
         optionA: "tissue that receives the largest dose",
         optionB: "tissue that is located in the abdominal region",
         optionC: "tissue with cells that divide quickly",
@@ -180,7 +181,7 @@ const questions = [
     },
     
     {
-        question: "Which of the following tissues is (are) considered to be particularly radiosensitive ?",
+        question: "Which of the following tissues is (are) considered to be particularly radiosensitive?",
         optionA: "Intestinal mucous membrane",
         optionB: "Epidermis of extremities",
         optionC: "Optic nerves",
@@ -190,7 +191,7 @@ const questions = [
     },
 
     {
-        question: "What are the two important ways that x-rays can interact with tissue ?",
+        question: "What are the two important ways that X-rays can interact with tissue?",
         optionA: "Pair production and Photodisintegration",
         optionB: "Photoelectric effect and Pair production",
         optionC: "Photoelectric effect and Compton scatter",
@@ -200,17 +201,17 @@ const questions = [
     },
 
     {
-        question: "The largest amount of diagnostic x-ray absorption is most likely to occur in which of the following tissues ?",
+        question: "The largest amount of diagnostic X-ray absorption is most likely to occur in which of the following tissues?",
         optionA: "Lung",
         optionB: "Adipose",
         optionC: "Muscle",
         optionD: "Bone",
         correctOption: "optionD",
-        explanation:"The amount of diagnostic x-ray absorption in a tissue is dependent on its density and atomic number. Among the tissues listed, bone has the highest density and atomic number, and therefore it is most likely to absorb the largest amount of diagnostic x-rays. In contrast, lung has a low density and low atomic number and is therefore less likely to absorb x-rays. Adipose tissue and muscle are also less dense and have lower atomic numbers compared to bone, and therefore they will absorb less x-ray radiation."
+        explanation:"The amount of diagnostic X-ray absorption in a tissue is dependent on its density and atomic number. Among the tissues listed, bone has the highest density and atomic number, and therefore it is most likely to absorb the largest amount of diagnostic X-rays. In contrast, lung has a low density and low atomic number and is therefore less likely to absorb X-rays. Adipose tissue and muscle are also less dense and have lower atomic numbers compared to bone, and therefore they will absorb less X-ray radiation."
     },
 
     {
-        question: "What is the dose range for bone marrow syndrome and the primary cause of death in patients ?",
+        question: "What is the dose range for bone marrow syndrome and the primary cause of death in patients?",
         optionA: "1-10 mGy and Neurological damage",
         optionB: "10-50 mGy and Bone marrow destruction",
         optionC: "0.7-10 Gy and Bone marrow destruction",
@@ -220,7 +221,7 @@ const questions = [
     },
 
     {
-        question: "What is the dose value at which the full syndrome of Gastrointestinal (GI) syndrome typically occurs ?",
+        question: "What is the dose value at which the full syndrome of Gastrointestinal (GI) syndrome typically occurs?",
         optionA: "greater than approximately 1 Gy",
         optionB: "greater than approximately 10 Gy",
         optionC: "greater than approximately 50 Gy",
@@ -230,7 +231,7 @@ const questions = [
     },
 
     {
-        question: "What is the dose value at which the full syndrome of Central Nervous System (CNS) syndrome typically occurs ?",
+        question: "What is the dose value at which the full syndrome of Central Nervous System (CNS) syndrome typically occurs?",
         optionA: "greater than approximately 1 Gy",
         optionB: "greater than approximately 10 Gy",
         optionC: "greater than approximately 50 Gy",
@@ -240,7 +241,7 @@ const questions = [
     },
 
     {
-        question: "What are the four stages of Acute Radiation Syndrome and give the proper order of these ?",
+        question: "What are the four stages of Acute Radiation Syndrome and select the proper order of these?",
         optionA: "Prodromal stage, Latent stage, Manifest illness stage, Recovery or death",
         optionB: "Prodromal stage, Manifest illness stage, Latent stage, Recovery or death",
         optionC: "Manifest illness stage, Prodromal stage, Latent stage, Recovery or death",
@@ -250,13 +251,13 @@ const questions = [
     },
 
     {
-        question: "What is cutaneous radiation injury (CRI) and at what dose can occur ?",
+        question: "What is cutaneous radiation injury (CRI) and at what dose can occur?",
         optionA: "Injury to internal organs from acute exposure to radiation and can occur with radiation doses as low as 1 Gy",
         optionB: "Injury to the skin and underlying tissues from acute exposure to radiation and can occur with radiation doses as low as 2 Gy.",
         optionC: "Injury to the bones from chronic exposure to radiation and can occur with radiation doses as low as 0.5 Gy",
         optionD: "Injury to the eyes from acute exposure to radiation and can occur with radiation doses as low as 5 Gy",
         correctOption: "optionB",
-        explanation:"The severity of CRI symptoms will increase with increasing doses. Unlike the skin lesions caused by chemical or thermal damage, the lesions caused by radiation exposures do not appear for hours to days following exposure, and burns and other skin effects tend to appear in cycles. The key treatment issues with CRI are infection and pain management. Cases of CRI have occurred in people who were overexposed to x-rays from fluoroscopy units."
+        explanation:"The severity of CRI symptoms will increase with increasing doses. Unlike the skin lesions caused by chemical or thermal damage, the lesions caused by radiation exposures do not appear for hours to days following exposure, and burns and other skin effects tend to appear in cycles. The key treatment issues with CRI are infection and pain management. Cases of CRI have occurred in people who were overexposed to X-rays from fluoroscopy units."
     }
 
 
@@ -312,10 +313,18 @@ function checkForAnswer() {
         }
     })
 
-    //checking to make sure a radio input has been checked or an option being chosen
+    
+    //checking if a radio input has been checked or an option being chosen
     if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
         document.getElementById('option-modal').style.display = "flex"
+        
+    }else {
+        // Show the explanation button when an answer is selected
+        document.getElementById('explanationButton').style.display = "block";
+        // Hide the submit button when an answer is selected
+        document.getElementById('disable').style.display = "none";
     }
+
 
     //checking if checked radio button is same as answer
     options.forEach((option) => {
@@ -325,7 +334,6 @@ function checkForAnswer() {
             indexNumber++ //adding 1 to index so has to display next question..
             //set to delay question number till when next question loads
             setTimeout(() => {
-                document.getElementById('explanation-modal').style.display = "flex"
                 questionNumber++
             }, 300)
         }
@@ -348,14 +356,18 @@ function checkForAnswer() {
 function SubmitAnswer() {
     checkForAnswer() //check if player picked right or wrong option
     unCheckRadioButtons()
-    disableSubmitButton()
 }
 
 
 //called when the next button is called
 function handleNextQuestion() {
+    // Hide the explanation button for the next question
+    document.getElementById('explanationButton').style.display = "none";
+    // Show the submit button for the next question
+    document.getElementById('disable').style.display = "block";
+
     unCheckRadioButtons()
-    undisableSubmitButton()
+    
         if (indexNumber <= 24) {
 //displays next question as long as index number isn't greater than 24, remember index number starts from 0, so index 24 is question 25
             NextQuestion(indexNumber)
@@ -382,17 +394,8 @@ function unCheckRadioButtons() {
     }
 }
 
-function disableSubmitButton() {
-    // capturing the button using its id
-    const button1 = document.getElementById("disable");
-    // function to disable the button
-    button1.disabled = true;
-}
-
-function undisableSubmitButton() {
-    // capturing the button using its id
-    const button1 = document.getElementById("disable");
-    button1.disabled = false;
+function explanationButton(){
+    document.getElementById('explanation-modal').style.display = "flex"
 }
 
 // function for when all questions being answered
@@ -405,11 +408,11 @@ function handleEndGame() {
         remark = "Inadequate knowledge, Keep Practicing."
         remarkColor = "red"
     }
-    else if (playerScore >= 13 && playerScore < 22) {
+    else if (playerScore >= 13 && playerScore < 21) {
         remark = "Average knowledge, You can do better."
         remarkColor = "orange"
     }
-    else if (playerScore >= 22) {
+    else if (playerScore >= 21) {
         remark = "Excellent, You have adequate knowledge."
         remarkColor = "green"
     }
@@ -440,7 +443,7 @@ function handleEndGame() {
 
     // Save the updated grades array to local storage
     localStorage.setItem('grades', JSON.stringify(grades));
-
+    
     const quizName = "Radiobiology";
 
     // Retrieve existing data from local storage
@@ -456,7 +459,6 @@ function handleEndGame() {
     quizNames.push(quizName);
     // Save the updated array to local storage
     localStorage.setItem('quizNames', JSON.stringify(quizNames));
-
 }
 
 function showQuestions() {
